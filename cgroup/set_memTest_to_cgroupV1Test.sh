@@ -39,5 +39,5 @@ function get_mem_stat() {
 echo "............................................................Use 10MB ............................................................"
 get_mem_stat
 echo "get out of memory from /var/log/messages"
-grep 'cgroup out of memory' /var/log/messages
+grep 'cgroup out of memory|cgroup_v1_test' /var/log/messages
 mem_clean
